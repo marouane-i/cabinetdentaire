@@ -1,0 +1,51 @@
+<mat-toolbar>
+  <span >
+    <img id="logo" src="../../assets/imgs/logo.png" alt="">
+  </span>
+  <span class="example-spacer"></span>
+  <button [matMenuTriggerFor]="menu" color="primary" class="menu"  mat-icon-button color="primary" aria-label="Example icon button with a menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <span>ACCUEIL</span>
+    </button>
+    <button mat-menu-item>
+      <span>NOS SPÉCIALITÉS</span>
+    </button>
+    <button mat-menu-item>
+      <span>BLANCHIMENT</span>
+    </button>
+    <button mat-menu-item>
+      <span>URGENCES</span>
+    </button>
+    <button mat-menu-item>
+      <span>CONTACT</span>
+    </button>
+    <button mat-menu-item>
+      <span>TÉMOIGNAGES</span>
+    </button>
+  </mat-menu>
+  <a href="https://www.google.com/maps/place/Centre+dentaire+Dr+houssam+Ait+Bouziane/@31.5858274,-8.0443881,17z/data=!3m1!4b1!4m5!3m4!1s0xdafeff8efc6c82f:0x8491d24795b1736f!8m2!3d31.5858274!4d-8.0443881" mat-icon-button class="example-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>place</mat-icon>
+  </a>
+  <a href="tel:0524015189" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>phone</mat-icon>
+  </a>
+  <a href="mailto:contact@drhoussam.com" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>email</mat-icon>
+  </a>
+</mat-toolbar>
+<div id="nav">
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="accueil">ACCUEIL</mat-button-toggle>
+      <mat-button-toggle value="specialities">NOS SPÉCIALITÉS</mat-button-toggle>
+      <mat-button-toggle value="blanchisment">BLANCHIMENT</mat-button-toggle>
+      <mat-button-toggle value="urgences">URGENCES</mat-button-toggle>
+      <mat-button-toggle value="cantact">CONTACT</mat-button-toggle>
+      <mat-button-toggle value="temoignages">TÉMOIGNAGES</mat-button-toggle>
+      <mat-button-toggle class="spec" value="rendezvous">PRENDRE RENDEZ-VOUS</mat-button-toggle>
+    </mat-button-toggle-group>
+</div>
+
+

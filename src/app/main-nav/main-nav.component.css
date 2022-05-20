@@ -1,0 +1,58 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+#logo{
+  width: 180px;
+}
+mat-toolbar{
+  height: 120px;
+}
+a{
+  margin-left: 70px;
+}
+.menu{
+  display: none;
+}
+mat-icon{
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+#nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-15px);
+}
+
+.spec{
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 1000px) {
+  #nav{
+    display: none;
+  } 
+  a{
+    display: none;
+  }
+  #logo{
+    width: 130px;
+  }
+  mat-toolbar{
+    height: 80px;
+  }
+  .menu{
+    display: block;
+  }
+  mat-icon{
+    border: none;
+  }
+  mat-menu{
+    display: none;
+  }
+}
