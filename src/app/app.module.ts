@@ -12,11 +12,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatMenuModule} from '@angular/material/menu';
-
+import { MainFooterComponent } from './main-footer/main-footer.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import {MatCardModule} from '@angular/material/card';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
-    MainNavComponent
+    MainNavComponent,
+    MainFooterComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,9 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     MatButtonToggleModule,
     MatMenuModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

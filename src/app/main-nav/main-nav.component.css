@@ -2,10 +2,14 @@
     flex: 1 1 auto;
   }
 #logo{
-  width: 180px;
+  width: 240px;
 }
 mat-toolbar{
   height: 120px;
+}
+.btnmenu{
+  font-size: 36px;
+  color: #0abde3;
 }
 a{
   margin-left: 70px;
@@ -21,12 +25,17 @@ mat-icon{
   align-items: center;
   padding: 20px;
 }
+mat-icon:hover{
+  color: #0abde3;
+  border-color: #0abde3;
+}
 #nav{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(-15px);
+  position: absolute;
 }
 
 .spec{
