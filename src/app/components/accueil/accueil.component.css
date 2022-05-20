@@ -2,7 +2,7 @@
     width: 100%;
 }
 #imgdiv{
-    background-image: url("../../assets/imgs/404-bg.jpg");
+    background-image: url("../../../assets/imgs/404-bg.jpg");
     background-repeat: no-repeat;
     height: 80vh;
     background-position: center;
@@ -42,7 +42,7 @@ fa-icon{
     justify-content: center;
     align-items: center;
     padding: 70px;
-    background-image: url("../../assets/imgs/seo-dentiste-centre-de-sante-paris-est.jpg");
+    background-image: url("../../../assets/imgs/seo-dentiste-centre-de-sante-paris-est.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
