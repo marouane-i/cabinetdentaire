@@ -1,0 +1,195 @@
+#mainimg{
+    width: 100%;
+}
+#imgdiv{
+    background-image: url("../../assets/imgs/404-bg.jpg");
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+fa-icon{
+    font-size: 50px;
+}
+#drinfo{
+    width: 35%;
+    padding: 20px;
+}
+#moreinfo{
+    width: 35%;
+}
+#signature div{
+    margin: 10px;
+}
+#signature{
+    display: flex;
+}
+#who{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#numbers{
+    margin-top: 50px;
+    opacity: 0.6;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    background-image: url("../../assets/imgs/seo-dentiste-centre-de-sante-paris-est.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#numbers .item{
+    margin: 0 20px;
+    text-align: center;
+}
+#numbers .item h3{
+    font-weight: 900;
+}
+.contactbtn{
+    background-color:#0abde3 ;
+}
+#moreservices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#moreservices .presentation{
+    padding:50px 100px;
+    text-align: center;
+}
+.servecitem{
+    width: 25%;
+    text-align: center;
+    padding: 50px;
+    transition: 0.5s;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    margin: 10px;
+}
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.servecitem:hover{
+    background-color: #0abde3;
+    color: white;
+}
+#moreservices .presentation h3{
+    font-size: medium;
+    color: #0abde3;
+}
+#cardscontianer{
+    transform: translateY(-120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.card{
+    width: 22%;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin: 10px 10px;
+}
+.card2{
+    background-color: #2980b9;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+.imgs img{
+    width: 100%;
+}
+.imgs{
+    position: relative;
+    border-radius: 5px;
+    width: 30%;
+}
+.imgs .underimg{
+    position: absolute;
+    background-color: #3498db;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7;
+    color: white;
+    font-weight: bold;
+}
+a:hover{
+    color: black;
+    background-color: white;
+}
+hr{
+    width: 50px;
+}
+.cardicon{
+    font-size: 40px;
+    margin: 20px 0;
+}
+.contactbnt{
+    background-color: #0abde3;;
+}
+#imgsection{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width: 1050px) {
+    #cardscontianer{
+        flex-direction: column;
+        transform: translateY(0);
+    }
+    #who{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+    }
+    #moreinfo{
+        width: 80%;
+    }
+    #drinfo{
+        width: 80%;
+    }
+    #numbers{
+        flex-direction: column;
+    }
+    .servecitem{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 688px) {
+    #imgsection{
+        flex-direction: column;
+    }
+    .imgs{
+        margin-top: 10px;
+        width: 80%;
+    }
+    .servecitem{
+        width: 80%;
+    }
+}

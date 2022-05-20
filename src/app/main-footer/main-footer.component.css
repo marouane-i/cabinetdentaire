@@ -1,0 +1,39 @@
+#maindiv{
+    background-color: #222f3e;
+    padding: 50px;
+    color: white;
+}
+.hour{
+    color: aqua;
+}
+
+#contentdiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.elem{
+    width: 25%;
+    padding: 20px;
+}
+hr{
+    width: 50px;
+}
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+mat-icon{
+    font-size: 50px;
+}
+@media screen and (max-width: 1000px) {
+    .elem{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 637px) {
+    .elem{
+        width: 100%;
+    }
+}
