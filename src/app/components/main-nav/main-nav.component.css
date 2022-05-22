@@ -4,8 +4,12 @@
 #logo{
   width: 240px;
 }
+mat-button-toggle{
+  padding: 10px;
+}
 mat-toolbar{
   height: 120px;
+  background-color: #fff;
 }
 .btnmenu{
   font-size: 36px;
@@ -14,7 +18,7 @@ mat-toolbar{
 a{
   margin-left: 70px;
 }
-.menu{
+.btnspec{
   display: none;
 }
 mat-icon{
@@ -29,6 +33,27 @@ mat-icon:hover{
   color: #0abde3;
   border-color: #0abde3;
 }
+#undernav a{
+  text-decoration: none;
+  display: block;
+  color: black;
+  margin: 0;
+  transition: 0.5s;
+} 
+#undernav a:hover{
+  color: white;
+  background-color: black;
+}
+#undernav a div{
+  padding: 15px;
+}
+#undernav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
 #nav{
   width: 100%;
   display: flex;
@@ -38,9 +63,13 @@ mat-icon:hover{
   position: absolute;
 }
 
+
 .spec{
   background-color: black;
   color: white;
+}
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
 }
 @media screen and (max-width: 1000px) {
   #nav{
@@ -55,13 +84,7 @@ mat-icon:hover{
   mat-toolbar{
     height: 80px;
   }
-  .menu{
+  .btnspec{
     display: block;
-  }
-  mat-icon{
-    border: none;
-  }
-  mat-menu{
-    display: none;
   }
 }
