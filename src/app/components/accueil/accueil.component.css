@@ -1,6 +1,9 @@
 #mainimg{
     width: 100%;
 }
+#containerx{
+    background-color: #F1F6FB;
+}
 #imgdiv{
     background-image: url("../../../assets/imgs/404-bg.jpg");
     background-repeat: no-repeat;

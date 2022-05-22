@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#urgencehearder{
+    background-color: #F1F6FB;
+    padding: 70px;
+    color: #130947;
+    font-weight: bolder;
+}
+#section{
+    margin: 50px 0;
+    width: 60%;
+}
+#info{
+    width: 94%;
+}
+#flexdiv{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#flexdiv img{
+    width: 50%;
+}
+#section div{
+    margin: 20px;
+}
+#info h2{
+    color: #130947;
+}
+#imgurg{
+    width: 100%;
+    border-radius: 5px  5px 0px 0px;
+}
+#info{
+}
+#followus{
+    border: gray solid 1px;
+    padding: 20px;
+    width: 94%;
+}
+#contactus div{
+    margin: 20px;
+}
+#contactus{
+    width: 30%;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+#urgencesection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+mat-icon{
+    font-size: 50px;
+}
+@media screen and (max-width: 981px) {
+    #urgencesection{
+        flex-direction: column-reverse;
+    }
+    #section{
+        width: 90%;
+    }
+    #contactus{
+        width: 90%;
+        margin: 2px auto;
+    }
+}
+@media screen and (max-width:705px  ){
+    #flexdiv{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    #flexdiv img{
+        width: 100%;
+    }
+}

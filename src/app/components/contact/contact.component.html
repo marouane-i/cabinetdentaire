@@ -1,0 +1,99 @@
+<div id="containerx">
+    <div id="urgencehearder">
+        <h1>Contact</h1>
+        <p><a href="#"> Dr Houssam Ait Bouziane </a> > Contact </p>
+    </div>
+    <div id="urgencesection">
+        <div id="contactus">
+            <h2 style="color: #130947;">Informations</h2>
+            <div class="englob">
+                <div>
+                    <mat-icon>location_on</mat-icon>
+                </div>
+                <div>
+                    <h3>Adresse</h3>
+                    <p>El Mhamid Avenue Guemassa Hamza 2, N8, Marrakesh 40000</p>
+                </div>
+            </div>
+            <hr>
+            <div class="englob">
+                <div>
+                    <mat-icon>local_phone</mat-icon>
+                </div>
+                <div>
+                    <h3>Appelez-nous</h3>
+                    <p>05 24 01 51 89</p>
+                </div>
+            </div>
+            <hr>
+            <div class="englob">
+                <div>
+                    <mat-icon>alternate_email</mat-icon>
+                </div>
+                <div>
+                    <h3>E-mail</h3>
+                    <p>contact@drhoussam.com</p>
+                </div>
+            </div>
+        </div>
+        <div id="section">
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+            <!--  If necessary, please modify the charset parameter to specify the        -->
+            <!--  character set of your HTML page.                                        -->
+            <!--  ----------------------------------------------------------------------  -->
+
+
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: Please add the following <FORM> element to your page.             -->
+            <!--  ----------------------------------------------------------------------  -->
+            <h3 style="color: #8FB3FC;">CENTRE DENTAIRE DR HOUSSAM AIT BOUZIANE</h3>
+            <h1>Pour plus d'information utilisez le formulaire ci-dessous</h1>
+            <form [formGroup]="leadForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post">
+                
+            <input formControlName="oid" type=hidden name="oid" value="00D8d000002cnSW">
+            <input type=hidden name="retURL" value="http://">
+            
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+            <!--  <input type="hidden" name="debug" value=1>                              -->
+            <!--  <input type="hidden" name="debugEmail"                                  -->
+            <!--  value="marouanezibout@gmail.com">                                       -->
+            <!--  ----------------------------------------------------------------------  -->
+            <mat-form-field appearance="outline">
+                <mat-label>Prenom</mat-label>
+                <input formControlName="firstName" matInput placeholder="Prenom">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Nom</mat-label>
+                <input formControlName="lastName" matInput placeholder="Nom">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput placeholder="Email">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Ville</mat-label>
+                <input formControlName="city" matInput placeholder="Ville">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Telephone</mat-label>
+                <input formControlName="phone" matInput placeholder="Telephone">
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="outline">
+                <mat-label>Description</mat-label>
+                <input formControlName="description" matInput placeholder="Message">
+            </mat-form-field>
+        
+            <button id="send" (click)="onSubmit()" mat-raised-button color="primary">Envoi</button>
+            
+            </form>
+        </div>
+    </div>
+</div>

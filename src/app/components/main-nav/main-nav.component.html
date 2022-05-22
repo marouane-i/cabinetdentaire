@@ -3,9 +3,7 @@
     <img id="logo" src="../../assets/imgs/logo.png" alt="">
   </span>
   <span class="example-spacer"></span>
-  <button [matMenuTriggerFor]="menu" color="primary" class="menu"  mat-icon-button color="primary" aria-label="Example icon button with a menu icon">
-    <mat-icon class="btnmenu">menu</mat-icon>
-  </button>
+  <button class="btn btn-lg btnspec" (click)="open()"><mat-icon>menu</mat-icon></button>
   <mat-menu #menu="matMenu">
     <button mat-menu-item>
       <span>ACCUEIL</span>
@@ -37,15 +35,15 @@
   </a>
 </mat-toolbar>
 <div id="nav">
-    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-      <mat-button-toggle value="accueil">ACCUEIL</mat-button-toggle>
-      <mat-button-toggle value="specialities">NOS SPÉCIALITÉS</mat-button-toggle>
-      <mat-button-toggle value="blanchisment">BLANCHIMENT</mat-button-toggle>
-      <mat-button-toggle value="urgences">URGENCES</mat-button-toggle>
-      <mat-button-toggle value="cantact">CONTACT</mat-button-toggle>
-      <mat-button-toggle value="temoignages">TÉMOIGNAGES</mat-button-toggle>
-      <mat-button-toggle class="spec" value="rendezvous">PRENDRE RENDEZ-VOUS</mat-button-toggle>
-    </mat-button-toggle-group>
+  <div id="undernav">
+    <a routerLink="/Accueil"><div value="accueil">ACCUEIL</div></a>
+    <a [routerLink]="['/Accueil']"><div value="specialities">NOS SPÉCIALITÉS</div></a>
+    <a routerLink="/Blanchiment"><div value="blanchisment">BLANCHIMENT</div></a>
+    <a routerLink="/Urgence"><div value="urgences">URGENCES</div></a>
+    <a [routerLink]="['/Accueil']"><div value="cantact">CONTACT</div></a>
+    <a [routerLink]="['/Accueil']"><div class="spec" value="rendezvous">PRENDRE RENDEZ-VOUS</div></a>
+  </div>
 </div>
+
 
 
