@@ -17,7 +17,6 @@ import { AccueilComponent } from './components/accueil/accueil.component';
 import {MatCardModule} from '@angular/material/card';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MainComponent } from './pages/main/main.component';
-import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { UrgencesComponent } from './components/urgences/urgences.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -28,7 +27,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
@@ -37,7 +36,6 @@ import { HttpClientModule } from '@angular/common/http';
     MainFooterComponent,
     AccueilComponent,
     MainComponent,
-    ContactPageComponent,
     UrgencesComponent,
     SidenaveComponent,
     BlanchimentComponent,

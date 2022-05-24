@@ -10,12 +10,10 @@
     border-radius: 5px;
     padding: 20px;
     box-shadow: -36px -36px 41px -48px rgba(0,0,0,1);
--webkit-box-shadow: -36px -36px 41px -48px rgba(0,0,0,1);
--moz-box-shadow: -36px -36px 41px -48px rgba(0,0,0,1);
+    -webkit-box-shadow: -36px -36px 41px -48px rgba(0,0,0,1);
+    -moz-box-shadow: -36px -36px 41px -48px rgba(0,0,0,1);
 }
-#section div{
-    margin: 20px;
-}
+
 #contactus{
     width: 30%;
     margin-right: 30px;

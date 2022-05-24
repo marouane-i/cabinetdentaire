@@ -37,63 +37,68 @@
             </div>
         </div>
         <div id="section">
-            <!--  ----------------------------------------------------------------------  -->
-            <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-            <!--  If necessary, please modify the charset parameter to specify the        -->
-            <!--  character set of your HTML page.                                        -->
-            <!--  ----------------------------------------------------------------------  -->
-
-
-            <!--  ----------------------------------------------------------------------  -->
-            <!--  NOTE: Please add the following <FORM> element to your page.             -->
-            <!--  ----------------------------------------------------------------------  -->
+           
             <h3 style="color: #8FB3FC;">CENTRE DENTAIRE DR HOUSSAM AIT BOUZIANE</h3>
             <h1>Pour plus d'information utilisez le formulaire ci-dessous</h1>
-            <form [formGroup]="leadForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post">
-                
-            <input formControlName="oid" type=hidden name="oid" value="00D8d000002cnSW">
-            <input type=hidden name="retURL" value="http://">
             
-            <!--  ----------------------------------------------------------------------  -->
-            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-            <!--  these lines if you wish to test in debug mode.                          -->
-            <!--  <input type="hidden" name="debug" value=1>                              -->
-            <!--  <input type="hidden" name="debugEmail"                                  -->
-            <!--  value="marouanezibout@gmail.com">                                       -->
-            <!--  ----------------------------------------------------------------------  -->
-            <mat-form-field appearance="outline">
-                <mat-label>Prenom</mat-label>
-                <input formControlName="firstName" matInput placeholder="Prenom">
-            </mat-form-field>
-            <br>
-            <mat-form-field appearance="outline">
-                <mat-label>Nom</mat-label>
-                <input formControlName="lastName" matInput placeholder="Nom">
-            </mat-form-field>
-            <br>
-            <mat-form-field appearance="outline">
-                <mat-label>Email</mat-label>
-                <input formControlName="email" matInput placeholder="Email">
-            </mat-form-field>
-            <br>
-            <mat-form-field appearance="outline">
-                <mat-label>Ville</mat-label>
-                <input formControlName="city" matInput placeholder="Ville">
-            </mat-form-field>
-            <br>
-            <mat-form-field appearance="outline">
-                <mat-label>Telephone</mat-label>
-                <input formControlName="phone" matInput placeholder="Telephone">
-            </mat-form-field>
-            <br>
-            <mat-form-field appearance="outline">
-                <mat-label>Description</mat-label>
-                <input formControlName="description" matInput placeholder="Message">
-            </mat-form-field>
-        
-            <button id="send" (click)="onSubmit()" mat-raised-button color="primary">Envoi</button>
+            <div class="FormHolder">
+                <h3>feel free to contact Us</h3>    
+                <form #myForm="ngForm" (submit)="submit(myForm)">
+                    <input ngModel type=hidden name="oid" value="00D8d000002cnSW">
+                    <input ngModel type=hidden name="retURL" value="google.com">
+    
+                    <div class="mb-3">
+                        <label for="first_name">First Name</label>
+                        <input ngModel #firstname="ngModel" required id="first_name" maxlength="40" name="first_name" size="20" type="text" class="form-control" />
+                        <div *ngIf="firstname.touched && !firstname.valid" class="alert alert-danger">
+                            <div *ngIf="firstname.errors?.['required']">firstName does not must be empty </div>
+                        </div>
+                    </div>
             
-            </form>
+                    <div class="input">    
+                        <label for="last_name">Last Name</label>
+                        <input ngModel #lastname="ngModel" required id="last_name" maxlength="80" name="last_name" size="20" type="text" class="form-control"/>
+                        <div *ngIf="lastname.touched && !lastname.valid" class="alert alert-danger">
+                            <div *ngIf="lastname.errors?.['required']">lastName does not must be empty </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input ngModel #email="ngModel" required id="email" maxlength="80" name="email" size="20" type="text" class="form-control" />
+                        <div *ngIf="email.touched && !email.valid" class="alert alert-danger">
+                            <div *ngIf="email.errors?.['required']">email does not must be empty </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="company">Company</label>
+                        <input ngModel #company="ngModel" required id="company" maxlength="40" name="company" size="20" type="text" class="form-control"/>
+                        <div *ngIf="company.touched && !company.valid" class="alert alert-danger">
+                            <div *ngIf="company.errors?.['required']">company does not must be empty </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="city">City</label>
+                        <input ngModel #city="ngModel" required="" id="city" maxlength="40" name="city" size="20" type="text" class="form-control"/>
+                        <div *ngIf="city.touched && !city.valid" class="alert alert-danger">
+                            <div *ngIf="city.errors?.['required']">city does not must be empty </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="state">State/Province</label>
+                        <input ngModel #state="ngModel" required id="state" maxlength="20" name="state" size="20" type="text" class="form-control"/>
+                        <div *ngIf="state.touched && !state.valid" class="alert alert-danger">
+                            <div *ngIf="state.errors?.['required']">state does not must be empty </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" [disabled]="disabled||myForm.status==='INVALID'">submit</button>
+                </form>
+            </div>
+            <iframe
+                id="salesforce"
+                name="salesforce"
+                src="about:blank"
+                style="display:none;"
+            ></iframe>
         </div>
     </div>
 </div>
