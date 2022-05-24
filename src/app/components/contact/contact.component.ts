@@ -16,9 +16,9 @@ export class ContactComponent{
   submit(form:any){
     console.log(form);
     this.disabled = true;
-    this.webToLead(form.value.first_name, form.value.last_name, form.value.email, form.value.company, form.value.city, form.value.state, "google.com");
+    this.webToLead(form.value.first_name, form.value.last_name, form.value.email, form.value.company, form.value.city, form.value.state);
   }
-  webToLead(firstName:string, lastName:string, email:string, company:string, city:string, state:string, retURL:string) {
+  webToLead(firstName:string, lastName:string, email:string, company:string, city:string, state:string) {
     const form = document.createElement('form');
   
     form.method = 'POST';
@@ -33,7 +33,6 @@ export class ContactComponent{
     form.appendChild(this.createHiddenInput('company', company));
     form.appendChild(this.createHiddenInput('city', city));
     form.appendChild(this.createHiddenInput('state', state));
-    form.appendChild(this.createHiddenInput('retURL', retURL));
   
     document.body.appendChild(form);
   
