@@ -1,0 +1,82 @@
+#urgencehearder{
+    background-color: #F1F6FB;
+    padding: 70px;
+    color: #130947;
+    font-weight: bolder;
+}
+#section{
+    margin: 50px 0;
+    width: 60%;
+}
+#containerX{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.elem{
+    padding: 20px;
+    background-color: white;
+    width: 30%;
+    border-radius: 5px;
+    margin: 10px;
+}
+.elem h3{
+    text-align: center;
+    color: #93A9FB;
+    margin: 10px 0;
+}
+.elem fa-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    transform: translateY(-20px);
+    color: #93A9FB;
+}
+.elem img{
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.elem img:hover{
+    transform: scale(1.06);
+}
+#flexdiv{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#section div{
+    margin: 20px;
+}
+#imgurg{
+    width: 100%;
+    border-radius: 5px  5px 0px 0px;
+}
+#info h2{
+    color: #130947;
+}
+#followus{
+    border: gray solid 1px;
+    padding: 20px;
+    width: 94%;
+}
+a{
+    text-decoration: none;
+}
+mat-icon{
+    font-size: 50px;
+}
+@media screen and (max-width: 940px) {
+    #containerX{
+        flex-direction: column-reverse;
+    }
+    .elem{
+        width: 90%;
+    }
+    #urgencehearder{
+        padding: 30px;
+    }
+}

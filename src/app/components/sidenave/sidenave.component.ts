@@ -9,23 +9,20 @@ import { NgbActiveOffcanvas, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
       <button type="button" class="btn-close text-reset" aria-label="Close" (click)="activeOffcanvas.dismiss('Cross click')"></button>
     </div>
     <div class="offcanvas-body">
-    <button mat-menu-item>
+    <button mat-menu-item routerLink="/Accueil" (click)="activeOffcanvas.dismiss('Cross click')">
       <span>ACCUEIL</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item routerLink="/Specialities" (click)="activeOffcanvas.dismiss('Cross click')">
       <span>NOS SPÉCIALITÉS</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item routerLink="/Blanchiment" (click)="activeOffcanvas.dismiss('Cross click')">
       <span>BLANCHIMENT</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item routerLink="/Urgence" (click)="activeOffcanvas.dismiss('Cross click')">
       <span>URGENCES</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item routerLink="/Contact" (click)="activeOffcanvas.dismiss('Cross click')">
       <span>CONTACT</span>
-    </button>
-    <button mat-menu-item>
-      <span>TÉMOIGNAGES</span>
     </button>
     </div>
   `

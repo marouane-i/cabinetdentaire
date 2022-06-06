@@ -29,6 +29,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HttpClientModule } from '@angular/common/http';
+import { SpecialitiesComponent } from './components/specialities/specialities.component';
+import { faTerminal } from '@fortawesome/free-solid-svg-icons';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +41,8 @@ import { HttpClientModule } from '@angular/common/http';
     UrgencesComponent,
     SidenaveComponent,
     BlanchimentComponent,
-    ContactComponent
+    ContactComponent,
+    SpecialitiesComponent
   ],
   imports: [
     GoogleMapsModule,
@@ -63,10 +66,12 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
+      {path:'',redirectTo:'Accueil',pathMatch:'full'},
       {path:'Accueil',component:AccueilComponent},
       {path:'Urgence',component:UrgencesComponent},
       {path:'Blanchiment',component:BlanchimentComponent},
-      {path:'Contact',component:ContactComponent}
+      {path:'Contact',component:ContactComponent},
+      {path:'Specialities',component:SpecialitiesComponent},
     ])
   ],
   providers: [],
